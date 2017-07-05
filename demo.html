@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Viewport Info JavaScript Library</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="viewportInfo.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+             
+                viewportInfo.init({
+                    viewports: {mobile: 767, tablet: 959, desktop: 1159}
+                }).onChange(function(viewport,isTouch){
+                    $('#viewport-size .label').text(viewport);
+                    $('#touch-info .label').text(isTouch);
+                },true)
+            })
+            
+        </script>
+    </head>
+    <body>
+        <div id="viewport-size">Viewport Size: <span class="label"></span></div>
+        <div id="touch-info">Touch Enabled: <span class="label"></span></div>
+    </body>
+</html>
