@@ -1,4 +1,4 @@
-viewportInfo = function ($, window) {
+viewportCallbacks = function ($, window) {
 
     /* Global Vars 
      ----------------------------------------------------------------------------*/
