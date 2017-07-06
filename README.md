@@ -7,7 +7,8 @@ Fires callbacks when viewport changes
 # Initialization
 viewportCallbacks is a property defined on the window object
 
-//Provide breakpoint configuration
+Provide breakpoint configuration
+# code 
 viewportCallbacks.init({
                     viewports: {
                       mobile: 767, tablet: 959, desktop: 1159
