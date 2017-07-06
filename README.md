@@ -4,7 +4,7 @@ Fires callbacks when viewport changes
 
 # How to Use
 
-#Initialization
+# Initialization
 viewportCallbacks is a property defined on the window object
 
 //Provide breakpoint configuration
@@ -14,7 +14,7 @@ viewportCallbacks.init({
                     }
 })
 
-#Registering a Callback
+# Registering a Callback
 
 //If you want to execute the callback on document ready as well, pass true as a sectond parameter to onChange(), as shown below
 
