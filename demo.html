@@ -9,18 +9,18 @@ and open the template in the editor.
         <title>Viewport Info JavaScript Library</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="viewportInfo.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="viewportCallbacks.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
              
-                viewportInfo.init({
+                viewportCallbacks.init({
                     viewports: {mobile: 767, tablet: 959, desktop: 1159}
                 }).onChange(function(viewport,isTouch){
                     $('#viewport-size .label').text(viewport);
                     $('#touch-info .label').text(isTouch);
-                },true)
-            })
+                },true);
+            });
             
         </script>
     </head>
